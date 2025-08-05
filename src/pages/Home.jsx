@@ -10,7 +10,6 @@ function Home() {
             <Skills />
             <Experience />
             <Education />
-            <h1>Home</h1>
         </>
     )
 }
