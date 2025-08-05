@@ -7,11 +7,10 @@ import Root from "./pages/Root.jsx";
 import ToDosPage from "./pages/ToDosPage.jsx";
 import SWAPI from "./pages/SWAPI.jsx";
 import {Provider} from "./components/ui/provider.jsx";
-// import {sizes} from "@chakra-ui/react/dist/types/theme/tokens/sizes.js";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "CV/",
         element: <Root />,
         children: [
             {
@@ -19,11 +18,11 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: "/To Do List",
+                path: "To Do List",
                 element: <ToDosPage />
             },
             {
-                path: "/SWAPI",
+                path: "SWAPI",
                 element: <SWAPI />
             }
         ]

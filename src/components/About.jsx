@@ -3,6 +3,7 @@ import { IoLocation } from "react-icons/io5";
 import {FaGithub, FaLinkedin, FaPhoneAlt} from "react-icons/fa";
 import {MdOutlineMail} from "react-icons/md";
 import {FaSquareInstagram} from "react-icons/fa6";
+import avatar from "../assets/ava2.png";
 
 
 function About() {
@@ -12,11 +13,11 @@ function About() {
                 <Container maxW="containerWidth">
                         <Grid gap="40px" alignItems="center" gridTemplateColumns={{md: "1fr 300px"}}>
                             <GridItem justifyItems="center">
-                                <Image aspectRatio={2 / 2} maxW="300px" borderRadius="full" src="src/assets/ava2.png" />
+                                <Image aspectRatio={2 / 2} maxW="300px" borderRadius="full" src={avatar} />
                             </GridItem>
                             <GridItem order={{md: "-1"}}>
                                 <Heading as="h1" fontSize={{base: "2xl", md: "4xl" }} textAlign={{base: "center", md: "left"}} mb="30px">
-                                    Hi, my name is Oleg
+                                    Hi, my name is Oleh
                                 </Heading>
                                 <Text mb={6} textAlign={{base: "center", md: "left"}}>
                                     I'm experienced front-end and email developer with focus on responsive design and cross-client compatibility. I specialize in creating pixel-perfect, mobile-optimized email templates and interactive web interfaces that perform seamlessly across all major devices and platforms.
@@ -44,7 +45,7 @@ function About() {
                                 <List.Root gap="2" flexDirection="row" variant="plain" align="center">
                                     <List.Item>
                                         <List.Indicator asChild fontSize="2xl">
-                                            <ChackraLink target="_blank" outline="none" href="https://github.com/Alezhan14"><FaGithub /></ChackraLink>
+                                            <ChackraLink target="_blank" outline="none" href="https://github.com/Oleh144"><FaGithub /></ChackraLink>
                                         </List.Indicator>
                                     </List.Item>
                                     <List.Item>

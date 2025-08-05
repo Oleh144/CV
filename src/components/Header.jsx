@@ -2,6 +2,7 @@ import {Box, Button, Container, DownloadTrigger, Flex, Link as ChackraLink} from
 import HeaderNavLink from "./HeaderNavLink.jsx";
 import {ColorModeButton} from "./ui/color-mode.jsx";
 import {Link} from "react-router";
+import CVFile from "../assets/CV_Oleh_Poruchikov_Junior_front_end_developer.pdf"
 
 
 function Header() {
@@ -11,24 +12,24 @@ function Header() {
             <Container maxW="containerWidth">
                 <Flex direction={{base: "column", md: "row"}} gap="4" justify="space-between">
                     <Box>
-                        <ChackraLink to="/" as={Link} fontSize="24px" fontWeight="bold" outline="none">
-                            {"<Oleg Poruchikov />"}
+                        <ChackraLink to="./" as={Link} fontSize="24px" fontWeight="bold" outline="none">
+                            {"<Oleh Poruchikov />"}
                         </ChackraLink>
                     </Box>
                     <Box as="nav">
                         <Flex align="center" gap={{base: 2, md: 4}} justify="space-between">
-                            <HeaderNavLink destination="/">
+                            <HeaderNavLink destination="./">
                                 Home
                             </HeaderNavLink>
-                            <HeaderNavLink destination="/To Do List">
+                            <HeaderNavLink destination="To Do List">
                                 To Do List
                             </HeaderNavLink>
-                            <HeaderNavLink destination="/SWAPI">
+                            <HeaderNavLink destination="SWAPI">
                                 SWAPI
                             </HeaderNavLink>
                             <ColorModeButton />
                             <Button>
-                                <a target="_blank" href="src/assets/Poruchikov_Front_End_Developer.pdf">Download CV</a>
+                                <a target="_blank" href={CVFile}>Download CV</a>
                             </Button>
                         </Flex>
                     </Box>

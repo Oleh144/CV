@@ -10,12 +10,12 @@ import {RiBearSmileLine, RiTailwindCssFill} from "react-icons/ri";
 function Skills() {
     return (
         <>
-            <Box as="section" bg="gray.100" paddingY={{base: "30px", md: "50px"}}>
+            <Box as="section" bg={{base: 'gray.100', _dark: 'gray.800'}} paddingY={{base: "30px", md: "50px"}}>
                 <Container maxW="containerWidth">
                     <Flex justify="center">
                         <Badge size="lg" as="h2" bg="gray.400" color="white" mb="5">Skills/Tools</Badge>
                     </Flex>
-                    <List.Root gap="4" mb={4} variant="plain" flexDirection="row" flexWrap="wrap" justifyContent="center" align="center" color="black">
+                    <List.Root gap="4" mb={4} variant="plain" flexDirection="row" flexWrap="wrap" justifyContent="center" align="center">
                         <List.Item flexDirection="column" textAlign="center" width={{base: "20%", md: "12%"}}>
                             <List.Indicator asChild fontSize="5xl" margin="0" color="yellow.500">
                                 <IoLogoJavascript />

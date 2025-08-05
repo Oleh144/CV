@@ -10,7 +10,7 @@ import {RiBearSmileLine, RiTailwindCssFill} from "react-icons/ri";
 function Education() {
     return (
         <>
-            <Box as="section" bg="gray.100" paddingY={{base: "30px", md: "50px"}} color="black">
+            <Box as="section" bg={{base: 'gray.100', _dark: 'gray.800'}} paddingY={{base: "30px", md: "50px"}}>
                 <Container maxW="containerWidth">
                     <Flex justify="center">
                         <Badge size="lg" as="h2" bg="gray.400" color="white" mb="5">Education</Badge>

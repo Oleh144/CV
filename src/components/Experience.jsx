@@ -9,7 +9,7 @@ function Experience() {
             <Box as="section" paddingY={{base: "30px", md: "50px"}}>
                 <Container maxW="800px">
                     <Flex justify="center">
-                        <Badge size="lg" as="h2" bg="gray.400" color="white" mb="5">Skills/Tools</Badge>
+                        <Badge size="lg" as="h2" bg="gray.400" color="white" mb="5">Experience</Badge>
                     </Flex>
 
                     <List.Root gap="4" mb={4} variant="plain" flexDirection="row" flexWrap="wrap" justifyContent="center" align="center">
@@ -21,7 +21,7 @@ function Experience() {
                                 </Box>
                                 <Box minW={{base: "100%", md: "80%"}} textAlign="left">
                                     <Heading as="h3" mb="2" fontSize="xl">Front-End Developer</Heading>
-                                    <List.Root ml="18px" color="gray.500" fontSize="small">
+                                    <List.Root ml="18px" color={{base: 'gray.500', _dark: 'white'}} fontSize="small">
                                         <List.Item>
                                             Creating responsive and interactive web pages
                                         </List.Item>
@@ -49,7 +49,7 @@ function Experience() {
                                 </Box>
                                 <Box minW={{base: "100%", md: "80%"}} textAlign="left">
                                     <Heading as="h3" mb="2" fontSize="xl">Email engineer</Heading>
-                                    <List.Root ml="18px" color="gray.500" fontSize="small">
+                                    <List.Root ml="18px" fontSize="small" color={{base: 'gray.500', _dark: 'white'}}>
                                         <List.Item>
                                             Developing responsive email templates from PSD, Figma, Sketch, PDF, Image, HTML.
                                         </List.Item>
@@ -74,7 +74,7 @@ function Experience() {
                                 </Box>
                                 <Box minW={{base: "100%", md: "80%"}} textAlign="left">
                                     <Heading as="h3" mb="2" fontSize="xl">QA engineer</Heading>
-                                    <Text color="gray.500" fontSize="small">Manual testing of functionality, user interface, and website performance to ensure high quality and compliance with customer requirements.</Text>
+                                    <Text color={{base: 'gray.500', _dark: 'white'}} fontSize="small">Manual testing of functionality, user interface, and website performance to ensure high quality and compliance with customer requirements.</Text>
                                 </Box>
                             </Flex>
                         </List.Item>

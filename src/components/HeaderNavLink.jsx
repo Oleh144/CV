@@ -2,7 +2,7 @@ import {NavLink} from "react-router";
 
 function HeaderNavLink({children, destination}) {
     return (
-        <NavLink to={destination} style={({ isActive}) => {
+        <NavLink to={destination} end style={({ isActive}) => {
             return {
                 fontWeight: isActive ? "bold" : ""
             };
