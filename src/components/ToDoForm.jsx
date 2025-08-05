@@ -20,7 +20,7 @@ function ToDoForm({handler}) {
                     {() => (
                         <Form>
                             <Flex gap={4}>
-                                <Field as={Input} type="text" name="toDoText" placeholder="To do text" color="gray.500" />
+                                <Field as={Input} type="text" name="toDoText" placeholder="To do text" color="gray.500" borderColor="gray.300" />
                                 <Button type="submit">Add To Do</Button>
                             </Flex>
                         </Form>

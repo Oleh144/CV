@@ -11,7 +11,7 @@ function Education() {
     return (
         <>
             <Box as="section" bg={{base: 'gray.100', _dark: 'gray.800'}} paddingY={{base: "30px", md: "50px"}}>
-                <Container maxW="containerWidth">
+                <Container maxW="800px" paddingX={{base: "32px", md: "48px"}}>
                     <Flex justify="center">
                         <Badge size="lg" as="h2" bg="gray.400" color="white" mb="5">Education</Badge>
                     </Flex>

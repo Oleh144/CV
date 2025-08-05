@@ -18,17 +18,19 @@ function ToDoElement({children, completed, id}) {
         <>
             <Flex
                 bg="white.300"
-                p="4"
-                mb={4}
+                padding={{base: '5px 15px'}}
+                mb={3}
                 borderWidth="1px"
-                borderColor="border.disabled"
+                borderRadius="2px"
+                borderColor="gray.300"
                 justifyContent="space-between"
                 alignItems="center"
+                gap={4}
             >
-                <Box as={Span} textDecoration={completed ? "line-through" : "none"} color={completed ? "red" : "gray.500"}>{children}</Box>
+                <Box as={Span} textDecoration={completed ? "line-through" : "none"} color={completed ? "red" : "black"}>{children}</Box>
                 <Flex gap={4}>
-                    <Button onClick={handleComplete} bg="green.500">Complete</Button>
-                    <Button onClick={handleDelete} bg="red">Delete</Button>
+                    <Button size={{base: "xs", md: 'md'}} onClick={handleComplete} bg="green.500">Complete</Button>
+                    <Button size={{base: "xs", md: 'md'}} onClick={handleDelete} bg="red">Delete</Button>
                 </Flex>
             </Flex>
         </>
