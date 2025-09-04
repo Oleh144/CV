@@ -27,7 +27,7 @@ function ToDoElement({children, completed, id}) {
                 alignItems="center"
                 gap={4}
             >
-                <Box as={Span} textDecoration={completed ? "line-through" : "none"} color={completed ? "red" : "black"}>{children}</Box>
+                <Box as={Span} textDecoration={completed ? "line-through" : "none"} color={completed ? "red" : ""}>{children}</Box>
                 <Flex gap={4}>
                     <Button size={{base: "xs", md: 'md'}} onClick={handleComplete} bg="green.500">Complete</Button>
                     <Button size={{base: "xs", md: 'md'}} onClick={handleDelete} bg="red">Delete</Button>
