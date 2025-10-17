@@ -3,6 +3,7 @@ import { IoLocation } from "react-icons/io5";
 import {FaGithub, FaLinkedin, FaPhoneAlt} from "react-icons/fa";
 import {MdOutlineMail} from "react-icons/md";
 import {FaSquareInstagram} from "react-icons/fa6";
+// @ts-ignore
 import avatar from "../assets/ava2.png";
 
 

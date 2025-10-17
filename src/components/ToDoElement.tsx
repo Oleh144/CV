@@ -1,9 +1,9 @@
 import {Box, Button, Flex, Span} from "@chakra-ui/react";
-import {useToDosStore} from "../store/useToDosStore.jsx";
+import {useToDosStore} from "../store/useToDosStore";
 
 
 
-function ToDoElement({children, completed, id}) {
+function ToDoElement({children, completed, id}: { children: string, completed: boolean, id: number }) {
     const {deleteTodos, completeTodos} = useToDosStore()
 
     function handleDelete() {

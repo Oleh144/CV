@@ -1,11 +1,4 @@
 import {Badge, Box, Container, Flex, Heading, List} from "@chakra-ui/react";
-import {IoLogoJavascript, IoLogoReact} from "react-icons/io5";
-import {FaBootstrap, FaFigma, FaGitAlt, FaHtml5, FaNodeJs, FaSass} from "react-icons/fa";
-import {MdElectricBolt, MdOutlineMail} from "react-icons/md";
-import {SiExpress, SiMongodb, SiRedux, SiVite} from "react-icons/si";
-import {RiBearSmileLine, RiTailwindCssFill} from "react-icons/ri";
-
-
 
 function Education() {
     return (

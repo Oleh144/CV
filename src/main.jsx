@@ -2,10 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, } from "react-router";
 import { ChakraProvider, createSystem, defaultConfig, defineConfig, } from "@chakra-ui/react"
-import Home from "./pages/Home.jsx";
-import Root from "./pages/Root.jsx";
-import ToDosPage from "./pages/ToDosPage.jsx";
-import SWAPI from "./pages/SWAPI.jsx";
+import Home from "./pages/Home.tsx";
+import Root from "./pages/Root.tsx";
+import ToDosPage from "./pages/ToDosPage.tsx";
+import SWAPI from "./pages/SWAPI.tsx";
 import {Provider} from "./components/ui/provider.jsx";
 
 const router = createBrowserRouter([

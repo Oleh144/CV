@@ -2,7 +2,7 @@ import {Box, Button, Flex, Input} from "@chakra-ui/react";
 import {Field, Form, Formik} from "formik";
 
 
-function ToDoForm({handler}) {
+function ToDoForm({handler}: { handler: (values: any, action: { resetForm: () => void }) => void }) {
 
     const initialValues = {
         toDoText: '',

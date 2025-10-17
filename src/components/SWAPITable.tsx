@@ -1,7 +1,7 @@
 import { Table } from "@chakra-ui/react";
 
 
-function SWAPITable({planets}) {
+function SWAPITable({planets}: {planets: any[]}) {
     return (
         <>
             <Table.Root size="sm" striped>
@@ -15,13 +15,13 @@ function SWAPITable({planets}) {
                     </Table.Row>
                 </Table.Header>
                 <Table.Body>
-                    {planets.map((item) => (
+                    {planets.map((planet) => (
                         <Table.Row key={Date.now() + Math.random()}>
-                            <Table.Cell>{item.name}</Table.Cell>
-                            <Table.Cell>{item.diameter}</Table.Cell>
-                            <Table.Cell>{item.climate}</Table.Cell>
-                            <Table.Cell>{item.population}</Table.Cell>
-                            <Table.Cell textAlign="end">{item.terrain}</Table.Cell>
+                            <Table.Cell>{planet.name}</Table.Cell>
+                            <Table.Cell>{planet.diameter}</Table.Cell>
+                            <Table.Cell>{planet.climate}</Table.Cell>
+                            <Table.Cell>{planet.population}</Table.Cell>
+                            <Table.Cell textAlign="end">{planet.terrain}</Table.Cell>
                         </Table.Row>
                     ))}
                 </Table.Body>

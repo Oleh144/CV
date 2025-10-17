@@ -1,7 +1,8 @@
 import {Box, Button, Container, DownloadTrigger, Flex, Link as ChackraLink} from "@chakra-ui/react";
-import HeaderNavLink from "./HeaderNavLink.jsx";
+import HeaderNavLink from "./HeaderNavLink.js";
 import {ColorModeButton} from "./ui/color-mode.jsx";
 import {Link} from "react-router";
+// @ts-ignore
 import CVFile from "../assets/CV_Oleh_Poruchikov_Junior_front_end_developer.pdf"
 
 
@@ -12,7 +13,7 @@ function Header() {
             <Container maxW="containerWidth">
                 <Flex direction={{base: "column", md: "row"}} gap="4" justify="space-between">
                     <Box>
-                        <ChackraLink to="./" as={Link} fontSize="24px" fontWeight="bold" outline="none">
+                        <ChackraLink href="./" as={Link} fontSize="24px" fontWeight="bold" outline="none">
                             {"<Oleh Poruchikov />"}
                         </ChackraLink>
                     </Box>

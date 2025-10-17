@@ -1,7 +1,4 @@
-import {Badge, Box, Button, Card, Container, Flex, Heading, HStack, Image, List, Text} from "@chakra-ui/react";
-
-
-
+import {Badge, Box, Container, Flex, Heading, List, Text} from "@chakra-ui/react";
 
 function Experience() {
     return (

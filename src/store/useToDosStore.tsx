@@ -19,7 +19,7 @@ export const useToDosStore = create((set) => ({
         }
     ],
 
-    addToDos: (values) => {
+    addToDos: (values: any) => {
         set((state) => ({
             toDos: [values, ...state.toDos]
         }))

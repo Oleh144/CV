@@ -1,3 +1,4 @@
+// @ts-ignore
 import { create } from 'zustand'
 
 export const useSWAPIStore = create((set) => ({
@@ -13,7 +14,7 @@ export const useSWAPIStore = create((set) => ({
             const data = await response.json();
             set({planets: data});
         } catch(error) {
-            set({issue: "Error message: " + error.message})
+            set({ issue: "Error message: " + (error as Error).message })
         }
     },
 

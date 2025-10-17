@@ -1,6 +1,6 @@
-import {Box, Button, Container, Flex, Heading, Table, Text} from "@chakra-ui/react";
-import SWAPITable from "../components/SWAPITable.jsx";
-import {useSWAPIStore} from "../store/useSWAPIStore.jsx";
+import {Box, Button, Container, Flex, Heading, Text} from "@chakra-ui/react";
+import SWAPITable from "../components/SWAPITable";
+import {useSWAPIStore} from "../store/useSWAPIStore.js";
 import {useEffect} from "react";
 
 function SWAPI() {
